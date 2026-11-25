@@ -1,5 +1,5 @@
 // Moteur audio entièrement procédural via la Web Audio API.
-// Aucune ressource externe — musique d'ambiance et effets sont synthétisés.
+// Aucune ressource externe : musique d'ambiance et effets sont synthétisés.
 
 let ctx: AudioContext | null = null;
 let masterGain: GainNode | null = null;
@@ -104,7 +104,7 @@ export function playFlip(index = 0) {
   }, index * 60);
 }
 
-// Coup de l'IA — légèrement plus grave
+// Coup de l'IA, légèrement plus grave
 export function playAIPlace() {
   tone(220, 0.14, "sawtooth", 0.22, 0.004);
   tone(110, 0.2, "sine", 0.25, 0.004);
@@ -118,14 +118,14 @@ export function playInvalid() {
   tone(140, 0.18, "square", 0.2, 0.004);
 }
 
-// Victoire — petit arpège ascendant
+// Victoire : petit arpège ascendant
 export function playWin() {
   const notes = [523.25, 659.25, 783.99, 1046.5];
   notes.forEach((f, i) =>
     window.setTimeout(() => tone(f, 0.35, "triangle", 0.4, 0.01), i * 130)
   );
 }
-// Défaite — arpège descendant
+// Défaite : arpège descendant
 export function playLose() {
   const notes = [440, 349.23, 293.66, 220];
   notes.forEach((f, i) =>

@@ -14,3 +14,4 @@ Corrections apportées au prototype :
 - débordement horizontal de 8 px en mobile supprimé (halo du plateau)
 - langue française, métadonnées, URL canonique et image Open Graph
 - base Vite fixée à /reversi/
+- tirets cadratins remplacés par une ponctuation simple dans les textes et les libellés.

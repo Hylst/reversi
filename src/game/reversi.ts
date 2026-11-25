@@ -229,7 +229,7 @@ export function pickAIMove(board: Board, player: Cell, level: number): [number, 
 
   const depth = depthForLevel(level);
 
-  // Niveau 1 : IA "débutante" — glouton positionnel avec une part d'aléatoire.
+  // Niveau 1 : IA "débutante", glouton positionnel avec une part d'aléatoire.
   if (depth === 0) {
     const scored = moves.map(([r, c]) => {
       const flips = getFlips(board, r, c, player).length;

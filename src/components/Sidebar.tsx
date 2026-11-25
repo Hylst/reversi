@@ -107,7 +107,7 @@ export function Sidebar() {
             </p>
             <p className="text-sm text-slate-400 mt-1">
               {passNotice
-                ? "Aucun coup possible — tour passé"
+                ? "Aucun coup possible, tour passé"
                 : `${current === BLACK ? "Noir" : "Blanc"} doit jouer`}
             </p>
           </div>
@@ -164,7 +164,7 @@ export function Sidebar() {
                     playClick();
                     setLevel(l.level);
                   }}
-                  title={`${l.name} — ${l.desc}`}
+                  title={`${l.name} : ${l.desc}`}
                   className={`py-2 rounded-lg text-xs font-bold transition-all ${
                     level === l.level
                       ? "bg-gradient-to-b from-violet-500 to-indigo-600 text-white shadow-lg shadow-indigo-900/50 scale-105"
@@ -270,7 +270,7 @@ function PlayerCard({
             {label}
           </div>
           <div className={`text-[10px] ${black ? "text-slate-400" : "text-slate-500"}`}>
-            {isHuman ? "Vous" : isAI ? "IA" : "—"}
+            {isHuman ? "Vous" : isAI ? "IA" : "-"}
           </div>
         </div>
         {isAITurn && (

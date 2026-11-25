@@ -82,7 +82,7 @@ function PassBanner() {
   return (
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
       <div className="px-5 py-3 rounded-xl bg-slate-900/90 border border-amber-400/40 text-amber-200 font-semibold shadow-2xl animate-[fadeIn_0.3s_ease-out] backdrop-blur">
-        Aucun coup possible — tour passé
+        Aucun coup possible, tour passé
       </div>
     </div>
   );
@@ -93,13 +93,13 @@ function Footer() {
     <div className="mt-8 text-center space-y-2">
       <p className="text-xs text-slate-400 max-w-2xl mx-auto leading-relaxed">
         Cliquez sur une case mise en surbrillance pour poser un pion. Encerclez
-        les pions adverses — en ligne, en colonne ou en diagonale — pour les
+        les pions adverses (en ligne, en colonne ou en diagonale) pour les
         retourner à votre couleur. Le joueur possédant le plus de pions à la fin
         de la partie l'emporte.
       </p>
       <p className="text-[11px] text-slate-500">
         Créateur de l'app :{" "}
-        <span className="font-semibold text-slate-300">Hylst — Geoffroy</span>{" "}
+        <span className="font-semibold text-slate-300">Hylst - Geoffroy</span>{" "}
         avec l'aide d'une IA
       </p>
       <style>{`
