@@ -10,7 +10,7 @@ Première version publique, reprise du prototype `Animated Reversi AI`.
 
 Corrections apportées au prototype :
 
-- fond d'ambiance servi en chemin relatif : plus de 404 sous /reversi/
+- fond d'ambiance construit depuis `import.meta.env.BASE_URL` (la chaîne à guillemets doubles rendait l'interpolation littérale) : plus de 404 sous /reversi/
 - débordement horizontal de 8 px en mobile supprimé (halo du plateau)
 - langue française, métadonnées, URL canonique et image Open Graph
 - base Vite fixée à /reversi/

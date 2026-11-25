@@ -12,7 +12,9 @@ export default function App() {
         style={{
           backgroundColor: "#020617",
           backgroundImage:
-            "linear-gradient(rgba(2,6,23,0.55), rgba(2,6,23,0.85)), url('${import.meta.env.BASE_URL}images/bg-ambient.jpg')",
+            "linear-gradient(rgba(2,6,23,0.55), rgba(2,6,23,0.85)), url('" +
+            import.meta.env.BASE_URL +
+            "images/bg-ambient.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
