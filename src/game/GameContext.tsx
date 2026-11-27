@@ -41,7 +41,7 @@ export const LEVELS = [
   { level: 3, name: "Confirmé", desc: "Anticipe 2 coups", think: 600 },
   { level: 4, name: "Expert", desc: "Anticipe 4 coups", think: 750 },
   { level: 5, name: "Maître", desc: "Stratégie avancée", think: 900 },
-  { level: 6, name: "Grand Maître", desc: "Quasi imbattable", think: 1050 },
+  { level: 6, name: "Grand Maître", desc: "Recherche profonde", think: 1050 },
 ] as const;
 
 type FlippingCell = { row: number; col: number; from: Cell; to: Cell; delay: number };
